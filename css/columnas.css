@@ -1,0 +1,53 @@
+
+
+/* aplicamos estilo global a toda la pagina utilizando "*"  */
+
+*{
+    margin:0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+    box-sizing: border-box; /* aseguramos que border y padding esten incluidos en el ancho y altura de los elementos */
+    
+}
+
+.container{
+ position: relative;
+ margin: auto; /* para que este centrado*/
+ width: 100%; /* ocupe todo el ancho */
+ height: auto; /* altura automatico*/
+}
+
+.fila {
+    position: relative;
+    margin: auto; /* para que este centr */
+    width: 100%; /* ocupe todo el ancho */
+    height: auto; /* altura automatico*/
+}
+
+.col-12 {
+    width: 100%; /* esta caja va a ocupar el 100% */
+    background:yellow; /* color de fondo */
+    border: 1px solid black; /* tamaño color borde */
+}
+
+.col-6 {
+    width: 50%; /* esta caja va a ocupar el 100% */
+    background:rgb(255, 123, 0); /* color de fondo */
+    border: 1px solid black; /* tamaño color borde */
+}
+/* border suma en los porcentajes de los anchos y altos*/
+.col-6-float {
+    float: left; /* permite que la caja flote a su derecha */
+    width: 50%; /* esta caja va a ocupar el 100% */
+    background:rgb(255, 72, 0); /* color de fondo */
+    border: 1px solid black; /* tamaño color borde */
+}
+
+.col-4 {
+    float: left; /* permite que la caja flote a su derecha */
+    width: 33.33333333%; /* esta caja va a ocupar el 100% */
+    background:rgb(255, 17, 0); /* color de fondo */
+    border: 1px solid black; /* tamaño color borde */
+}
