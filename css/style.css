@@ -1,0 +1,155 @@
+/* 
+utilizamos media query introducido por css3
+utilizando la palabra clave @media para incluir bloques css que deben cumplir una condicion para aplicarse 
+*/
+
+/* aplicamos estilo global a toda la pagina utilizando "*"  */
+*{
+    margin:0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+    box-sizing: border-box; /* aseguramos que border y padding esten incluidos en el ancho y altura de los elementos */
+    
+}
+
+.container{
+ position: relative;
+ margin: auto; /* para que este centrado*/
+ width: 100%; /* ocupe todo el ancho */
+ height: auto; /* altura automatico*/
+}
+
+/* SECCION 1 CABECERA */
+/* aplica etiqueta header id logo  */
+header #logo{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 50px;
+    text-align: center;
+    line-height: 60px; /* dimension de la altura del texto*/
+}
+
+header center p{
+    text-align: center;
+    width: 42px;
+    line-height: 42px;
+    border-radius: 100%; /* redondea los bordes */
+    background: #ccc;
+    color: white;
+}
+
+header #icono1 p{
+    background: blue;
+}
+
+header #icono2 p{
+    background: green;
+}
+
+header #icono3 p{
+    background: red;
+}
+
+
+.fila {
+    position: relative;
+    margin: auto; /* para que este centr */
+    width: 100%; /* ocupe todo el ancho */
+    height: auto; /* altura automatico*/
+    clear: both; /* para que respete las cajas dentro de la fila */
+    display: table; /* que nada se superponga a nivel de las filas */
+}
+
+/* generalizamos todas las clases que comiencen con col- aplicamos estos estilos */
+[class*="col-"]{
+    /* border: 1px solid black; tamaño color borde */
+    float: left; /* permite que la caja flote a su derecha */
+    padding: 20px;
+}
+
+/*
+PANTALLA LARGE LG desde 1200px de ancho en adelante 
+*/
+
+@media(min-width: 1200px){
+	.col-lg-12{width:100%;}
+	.col-lg-11{width:91.66666667%;}
+	.col-lg-10{width:83.33333333%;}
+	.col-lg-9{width:75%;}
+	.col-lg-8{width:66.66666667%;}
+	.col-lg-7{width:58.33333333%;}
+	.col-lg-6{width:50%;}
+	.col-lg-5{width:41.66666667%;}
+	.col-lg-4{width: 33.33333333%;}
+	.col-lg-3{width: 25%;}
+	.col-lg-2 {width: 16.66666667%;}
+    .col-lg-1 {width: 8.33333333%;}
+    .col-lg-0 {display: none;}
+}
+
+
+/*
+PANTALLA MEDIUM md - desde 992 a 1199 px 
+*/
+
+@media(min-width: 992px) and (max-width: 1199px){
+	.col-md-12{width:100%;}
+	.col-md-11{width:91.66666667%;}
+	.col-md-10{width:83.33333333%;}
+	.col-md-9{width:75%;}
+	.col-md-8{width:66.66666667%;}
+	.col-md-7{width:58.33333333%;}
+	.col-md-6{width:50%;}
+	.col-md-5{width:41.66666667%;}
+	.col-md-4{width: 33.33333333%;}
+	.col-md-3{width: 25%;}
+	.col-md-2 {width: 16.66666667%;}
+	.col-md-1 {width: 8.33333333%;}
+    .col-md-0 {display: none;}
+}
+
+/*
+PANTALLA TABLET - SMALL sm - desde 768 a 991 px 
+*/
+
+@media(min-width: 768px) and (max-width: 991px){
+	.col-ms-12{width:100%;}
+	.col-ms-11{width:91.66666667%;}
+	.col-ms-10{width:83.33333333%;}
+	.col-ms-9{width:75%;}
+	.col-ms-8{width:66.66666667%;}
+	.col-ms-7{width:58.33333333%;}
+	.col-ms-6{width:50%;}
+	.col-ms-5{width:41.66666667%;}
+	.col-ms-4{width: 33.33333333%;}
+	.col-ms-3{width: 25%;}
+	.col-ms-2 {width: 16.66666667%;}
+    .col-ms-1 {width: 8.33333333%;}
+    .col-ms-0 {display: none;}
+}
+
+/*
+PANTALLA PHOPE - EXTRA SMALL xs - desde 768 a 991 px 
+*/
+
+@media(max-width: 767px){
+	.col-xs-12{width:100%;}
+	.col-xs-11{width:91.66666667%;}
+	.col-xs-10{width:83.33333333%;}
+	.col-xs-9{width:75%;}
+	.col-xs-8{width:66.66666667%;}
+	.col-xs-7{width:58.33333333%;}
+	.col-xs-6{width:50%;}
+	.col-xs-5{width:41.66666667%;}
+	.col-xs-4{width: 33.33333333%;}
+	.col-xs-3{width: 25%;}
+	.col-xs-2 {width: 16.66666667%;}
+    .col-xs-1 {width: 8.33333333%;}
+    .col-xs-0 {display: none;}
+}
+
+.pie {
+    width: 100%;
+    text-align: center;
+}
