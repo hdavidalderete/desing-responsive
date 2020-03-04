@@ -51,6 +51,33 @@ header #icono3 p{
     background: red;
 }
 
+/*
+	SECCION 1 BOTONES
+*/
+
+nav ul li{
+	padding: 10px;
+	text-align: center;
+}
+
+nav ul li a{
+	display: block; /* visualizar en bloques, genera mas cuerpo a la etiqueta	 */
+	background: rgba(100,0, 255, 1);
+	font-family: 'Kaushan Script', cursive;
+	color: white;
+	line-height: 48px; /* altura del bloque */
+}
+
+/* agregamos un cambio de color cuando paso el puntero por encima del boton */
+nav ul li a:hover{
+	background: rgb(73, 18, 73);
+}
+
+/* agregamos un cambio de color cuando se selecciono un boton */
+nav ul li a:active {
+	background: rgb(208, 48, 230);
+}
+
 
 .fila {
     position: relative;
