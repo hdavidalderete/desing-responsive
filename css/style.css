@@ -78,6 +78,123 @@ nav ul li a:active {
 	background: rgb(208, 48, 230);
 }
 
+/*
+SECCION 2 Imagen + descripcion
+*/
+/* para el id y clase agregamos padding*/
+#section2 center{
+	padding: 20px;
+}
+
+/* le damos el mismo tamaño a las imagenes y las redondeamos */
+
+#section2 img{
+	height: 200px;
+	width: 200px;
+	border-radius: 100%;
+	padding: 10px;
+}
+
+#section2 h1{
+	padding: 10px;
+	font-family: 'Kaushan Script', cursive;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+#section2 h1{
+	padding: 10px;
+    text-align: center;
+
+}
+
+/*
+SECCION 3 
+*/
+
+#section3 aside ul li{
+	background: #aaa;
+	padding: 10px; /* Margen interno */
+	margin: 2px 10px; /* Margen externo 2 vertical 10 horizontal*/
+	list-style: square;
+	list-style-position: inside;
+	list-style-image: url(../img/lista.png);
+}
+
+#section3 article h1{
+	font-family: 'Kaushan Script', cursive;
+	font-size: 40px;
+	margin: 20px;
+}
+
+#section3 article p img{
+	float: left; /* que flote a la izquierda */
+	margin-right: 20px;
+}
+
+#section3 article p{
+	margin: 5px 20px;
+	font-size: 14px;
+	text-align: justify;
+}
+
+#section3 aside#der h1{
+	line-height: 50px;
+	text-align: center;
+	background: rgba(100,0,255,1);
+	color: white;
+	margin-bottom: 5px;
+}
+
+#section3 aside#der input{
+	width: 100%;
+	padding: 10px;
+	margin: 5px 0px
+}
+
+#section3 aside#der input[type="text"]{
+	background: url(../img/usuario.png);
+	background-position: right;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#section3 aside#der input[type="text"]{
+	background: url(../img/usuario.png);
+	background-position: right;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#section3 aside#der input[type="password"]{
+	background: url(../img/password.png);
+	background-position: right;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#section3 aside#der input[type="submit"]{
+	background-color: rgba(100,0,100, 5);
+	border: 0;
+}
+
+/*
+SECTION 4
+*/
+
+footer{
+	padding: 20px 10px;
+} 
+
+footer div{
+	background: rgba(100, 0, 255, 1);
+	text-align: center;
+	line-height: 50px;
+	color: white;
+}
+
+/* GENERAL */
 
 .fila {
     position: relative;
@@ -112,8 +229,14 @@ PANTALLA LARGE LG desde 1200px de ancho en adelante
 	.col-lg-3{width: 25%;}
 	.col-lg-2 {width: 16.66666667%;}
     .col-lg-1 {width: 8.33333333%;}
-    .col-lg-0 {display: none;}
+	.col-lg-0 {display: none;}
+	
+	#section3 article p img{
+		width: 50%;
+	}
 }
+
+
 
 
 /*
@@ -133,7 +256,11 @@ PANTALLA MEDIUM md - desde 992 a 1199 px
 	.col-md-3{width: 25%;}
 	.col-md-2 {width: 16.66666667%;}
 	.col-md-1 {width: 8.33333333%;}
-    .col-md-0 {display: none;}
+	.col-md-0 {display: none;}
+	
+	#section3 article p img{
+		width: 60%;
+	}
 }
 
 /*
@@ -153,7 +280,12 @@ PANTALLA TABLET - SMALL sm - desde 768 a 991 px
 	.col-ms-3{width: 25%;}
 	.col-ms-2 {width: 16.66666667%;}
     .col-ms-1 {width: 8.33333333%;}
-    .col-ms-0 {display: none;}
+	.col-ms-0 {display: none;}
+	
+	#section3 article p img{
+		width: 100%;
+		margin-bottom: 20px;
+	}
 }
 
 /*
@@ -173,7 +305,12 @@ PANTALLA PHOPE - EXTRA SMALL xs - desde 768 a 991 px
 	.col-xs-3{width: 25%;}
 	.col-xs-2 {width: 16.66666667%;}
     .col-xs-1 {width: 8.33333333%;}
-    .col-xs-0 {display: none;}
+	.col-xs-0 {display: none;}
+	
+	#section3 article p img{
+		width: 100%;
+		margin-bottom: 20px;
+	}
 }
 
 .pie {
