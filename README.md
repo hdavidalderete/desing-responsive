@@ -1,2 +1,2 @@
 # desing-responsive
-HTML5 - CSS3
+HTML5 - CSS3 - MEDIA QUERY - DISEÑO WEB RESPONSIVE
